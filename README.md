@@ -146,6 +146,14 @@ start from step 2:
                 --num-nodes 2\
                 --machine-type <type>\
                 --zone <zone>
+                
+           [output]
+           
+           Creating cluster hello-world...done.
+                Created [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/us-central1-a/clusters/hello-kate].
+                kubeconfig entry generated for hello-world.
+                NAME         ZONE           MASTER_VERSION  MASTER_IP       MACHINE_TYPE   STATUS
+                hello-kate  us-central1-a  1.5.7           146.148.46.124  n1-standard-1  RUNNING
  
         
        
