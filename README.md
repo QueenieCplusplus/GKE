@@ -211,6 +211,8 @@ start from step 2:
  * 5.4, to do trouble shoot
  
             kubectl get events
+            
+# LB
 
 start from step 6:
 
