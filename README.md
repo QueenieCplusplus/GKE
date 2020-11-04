@@ -200,6 +200,19 @@ start from step 2:
             // hello-node-714049816-ztzrb is a pod id and name
             
 
+* 5.3 to check state of a cluster using kubectl tool
+
+           kubectl cluster info
+           
+           kubectl config view
+           
+           kubectl get events
+           
+           kubectl logd <pod-name> 
+           // 可能如上為 <deployed container name> 或是 hello-node-714049816-ztzrb
+
+
+       
        
        
        
