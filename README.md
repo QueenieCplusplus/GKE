@@ -128,8 +128,10 @@ start from step 2:
  * 3.8, go to gcr to check display info in cloud console.
  
      ![gcr](https://cdn.qwiklabs.com/dQgWvGqTs5%2BVCSfmbpL2lpTlQ7dd19FwSIKTEBS3poA%3D)
+   
+ start from step 4:
  
-         
+ > create container's Cluster and Pod
         
        
        
