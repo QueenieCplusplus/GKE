@@ -244,7 +244,7 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
         kubernetes                  10.3.240.1     <none>           443/TCP    5m    // visible only in cloud
        
   
-* 6.3, to check service is available to pubic
+* 6.3, to check service is available to pubic by pointing browser to addr http://<EXTERNAL_IP>:8080
 
       ![ip](https://cdn.qwiklabs.com/C36gw9A9wyqza3PveBYBCsMggISATH80A18fqFBck7U%3D)
         
