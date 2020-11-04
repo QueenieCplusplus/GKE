@@ -269,5 +269,7 @@ start from step 7:
 
 # Upgarde Service
 
+   once the developer modifies the code file, devops & SRE shall roll out the upgrade then.
+
 start from step 8:
 
