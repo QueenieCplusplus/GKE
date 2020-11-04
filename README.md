@@ -12,7 +12,9 @@ steps:
 
 (3) push Image to Container Registry
 
-(4) create Cluster and Pod
+(4) create GKE Cluster 
+
+(5) create Pod (to include containers)
 
 (5) allow External Traffic
 
