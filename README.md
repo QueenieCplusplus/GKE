@@ -20,8 +20,6 @@ vm, container, app, registry, cluster, pod, kubectl tool
 
 (6) scale & update service
 
-(7) using K8s Dashboard
-
 
 start from step 2:
 
