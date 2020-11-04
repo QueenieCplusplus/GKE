@@ -60,6 +60,59 @@ start from step 2:
 * 2.6, see result of display in Browser
 
       Use the built-in Web preview feature of Cloud Shell to open a new browser tab and proxy a request to the instance you just started on port 8080.
+      
+      
+ start from step 3:
+ 
+ > copy code file to container image
+ 
+   the docker file is to describe the image you want to build,
+   it can extend from the other existing image, such as above mentioned nodejs file.
+ 
+ * 3.1, create Docker file image
+ 
+        vi Dockerfile
+        
+ * 3.2, copy Node.js content to Docker file, press i firsly
+ 
+          FROM node:6.9.2
+          EXPOSE 8080
+          COPY server.js .
+          CMD node server.js
+          
+ * 3.3, check project id
+ 
+        see connection detail in cloud console
+          
+ * 3.4, build docker file and run it
+ 
+        docker built -t gcr.io/<project-id>/<image name>:v1
+        
+        docker run -d -p 8080:8080 gcr.io/<project-id>/<image name>:v1
+        
+ * 3.5, check result in web-preview feature in gcloud shell or type following cmd line
+ 
+        curl http://localhost:8080
+        
+ * 3.6, find container id
+ 
+         docker ps
+         
+         [output]
+         container id            image                               cmd
+         xxxxxxx          gcr.io/<project-id>/<image name>:v1        "/bin/sh -c"
+         
+ * 3.7, push image to container registry
+ 
+         gcloud auth configure-docker
+         
+         docker push gcr.io/<project-id>/<image name>:v1
+         
+ * 3.8, go to gcr to check display info in cloud console.
+ 
+         
+        
+       
        
        
   
