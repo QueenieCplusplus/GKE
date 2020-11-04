@@ -4,7 +4,7 @@ vm, container, app, registry, cluster, pod, kubectl tool
 ![gke](https://cdn.qwiklabs.com/ZB%2FLTu%2FfOBuu7svaY0%2Fier%2FSvbJdfF3Lrb%2F5woXeecI%3D)
 
 
-steps:
+# core steps:
 
 (1) create VM
 
@@ -162,7 +162,10 @@ start from step 2:
  
    ![gke](https://cdn.qwiklabs.com/wMR0qhPxxgayDTSjDq1oXmoXEy4OeuQ%2FUtc6CZnvFT0%3D)
         
-       
+     
+ start from step 5:
+
+> create Pod
        
        
   
