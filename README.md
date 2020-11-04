@@ -166,6 +166,10 @@ start from step 2:
  start from step 5:
 
 > create Pod
+
+   A pod consists of single/multiple containers tiled together for adm/network purpose.
+   
+   hereby, we use single container bult with above mentioned nodejs image (stored in GCR), which serves content on port 8080.
        
        
   
