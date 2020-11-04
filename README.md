@@ -344,3 +344,9 @@ start from step 8:
 
         [output]
         deployment.extensions/<deployed container name> edited
+
+* 8.4, to run pod with new image by running again deplotment
+
+        // New pods will be created with the new image and the old pods will be deleted.
+        
+        kubectl get deployments
