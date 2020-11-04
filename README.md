@@ -14,7 +14,7 @@ vm, container, app, registry, cluster, pod, kubectl tool
 
 (4) create GKE Cluster 
 
-(5) create Pod (to include containers)
+(5) create Pod (to include deployed containers)
 
 (5) allow External Traffic
 
