@@ -277,5 +277,5 @@ start from step 8:
  
         docker built -t gcr.io/<project-id>/<node name>:v2
         
-        docker run -d -p 8080:8080 gcr.io/<project-id>/<node name>:v2
+        docker push gcr.io/<project-id>/<node name>:v2
 
