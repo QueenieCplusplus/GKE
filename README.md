@@ -220,9 +220,12 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
 
 * 6.1, to create a external ip for pod 
 
-         kubectl expose deployment <eployed container name>
+         kubectl expose deployment <deployed container name>
 
          kubectl expose deployment hello-node --type="LoadBalancer" --port=8080
+         
+         [output]
+         service/hello-node exposed
        
          
        
