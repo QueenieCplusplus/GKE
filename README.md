@@ -240,8 +240,8 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
         
         [outputs]
         NAME                        CLUSTER-IP     EXTERNAL-IP      PORT(S)    AGE
-        <deployed container name>   10.3.250.149   104.154.90.147   8080/TCP   1m    // public accessible
-        kubernetes                  10.3.240.1     <none>           443/TCP    5m
+        <deployed container name>   10.3.250.149   104.154.90.147   8080/TCP   1m    // public accessible ouside cloud
+        kubernetes                  10.3.240.1     <none>           443/TCP    5m    // visible only in cloud
        
   
 
