@@ -232,9 +232,16 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
          // This will cause the resulting service to LB traffic across all pods managed by the deployment (in this case only 1 pod, but you will add more replicas later).
          
          [output]
-         service/hello-node exposed
+         service/ <deployed container name> exposed
        
-         
+ * 6.2, to find public/private (accessible) IP addr of the services
+ 
+        kubectl get services
+        
+        [outputs]
+        NAME                        CLUSTER-IP     EXTERNAL-IP      PORT(S)    AGE
+        <deployed container name>   10.3.250.149   104.154.90.147   8080/TCP   1m    // public accessible
+        kubernetes                  10.3.240.1     <none>           443/TCP    5m
        
   
 
