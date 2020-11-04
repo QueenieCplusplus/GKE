@@ -273,9 +273,12 @@ start from step 7:
 
 start from step 8:
 
-* 8.1, build docker file and run it
+* 8.1, build docker file and push it to GCR
  
         docker built -t gcr.io/<project-id>/<node name>:v2
         
         docker push gcr.io/<project-id>/<node name>:v2
+        
+        
+* 8.2, to edit yaml file to change config, due to the changing deployed containers image.
 
