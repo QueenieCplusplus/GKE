@@ -350,3 +350,7 @@ start from step 8:
         // New pods will be created with the new image and the old pods will be deleted.
         
         kubectl get deployments
+        
+        [output]
+        NAME                    DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+        <deploy container name>   4         4         4            4           1h
