@@ -264,9 +264,6 @@ start from step 7:
 ![scale](https://cdn.qwiklabs.com/xcK5q7mZsGBWS%2BPbytdmF0W%2BdsZxvNXdOIEPBXX13X4%3D)
 
 
-
-
-
 # Upgarde Service
 
    once the developer modifies the code file, devops & SRE shall roll out the upgrade then.
@@ -354,3 +351,7 @@ start from step 8:
         [output]
         NAME                    DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
         <deploy container name>   4         4         4            4           1h
+
+# Ref
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
