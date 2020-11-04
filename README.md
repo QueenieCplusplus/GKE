@@ -273,3 +273,9 @@ start from step 7:
 
 start from step 8:
 
+* 8.1, build docker file and run it
+ 
+        docker built -t gcr.io/<project-id>/<node name>:v2
+        
+        docker run -d -p 8080:8080 gcr.io/<project-id>/<node name>:v2
+
