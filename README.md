@@ -173,12 +173,17 @@ start from step 2:
    
    when calling deployment, the pod running containers image is created then.
    
-* 5.1, to do deployment to create a Pod using kubectl tool
+* 5.1, to do deployment to create a (single container) Pod using kubectl tool
 
-             kubectl create deployment <pod name>\
+             kubectl create deployment <a container's pod name>\
                
                    --image = gcr.io/<project-id>/<node name>:v1  
 
+             [output]
+             
+             deployment.apps/<a container's pod name> created
+             
+* 5.2, to create and scale Pod using kubectl tool
        
        
        
