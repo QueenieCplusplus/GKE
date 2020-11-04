@@ -254,6 +254,8 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
 
 start from step 7:
 
+![scale](https://cdn.qwiklabs.com/xcK5q7mZsGBWS%2BPbytdmF0W%2BdsZxvNXdOIEPBXX13X4%3D)
+
 
 
 # Upgarde Service
