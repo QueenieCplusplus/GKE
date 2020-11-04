@@ -111,6 +111,20 @@ start from step 2:
          
          docker push gcr.io/<project-id>/<image name>:v1
          
+         
+         [output]
+         
+                The push refers to a repository [gcr.io/<proj_id>/<image_name>]
+                ba6ca48af64e: Pushed
+                381c97ba7dc3: Pushed
+                604c78617f34: Pushed
+                fa18e5ffd316: Pushed
+                0a5e2b2ddeaa: Pushed
+                53c779688d06: Pushed
+                60a0858edcd5: Pushed
+                b6ca02dfe5e6: Pushed
+                v1: digest: sha256:8a9349a355c8e06a48a1e8906652b9259bba6d594097f115060acca8e3e941a2 size: 2002
+         
  * 3.8, go to gcr to check display info in cloud console.
  
      ![gcr](https://cdn.qwiklabs.com/dQgWvGqTs5%2BVCSfmbpL2lpTlQ7dd19FwSIKTEBS3poA%3D)
