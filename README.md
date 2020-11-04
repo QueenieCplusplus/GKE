@@ -170,6 +170,16 @@ start from step 2:
    A pod consists of single/multiple containers tiled together for adm/network purpose.
    
    hereby, we use single container bult with above mentioned nodejs image (stored in GCR), which serves content on port 8080.
+   
+   when calling deployment, the pod running containers image is created then.
+   
+* 5.1, to do deployment to create a Pod using kubectl tool
+
+             kubectl create deployment <pod name>\
+               
+                   --image = gcr.io/<project-id>/<node name>:v1  
+
+       
        
        
   
