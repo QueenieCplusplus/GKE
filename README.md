@@ -57,6 +57,10 @@ start from step 2:
 
        node server.js
        
+* 2.6, see result of display in Browser
+
+      Use the built-in Web preview feature of Cloud Shell to open a new browser tab and proxy a request to the instance you just started on port 8080.
+       
        
   
 
