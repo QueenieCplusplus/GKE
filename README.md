@@ -282,3 +282,65 @@ start from step 8:
         
 * 8.2, to edit yaml file to change config, due to the changing deployed containers image.
 
+        // update the pod to new image
+        
+        ubectl edit deployment <deployed container name>
+        
+        // Look for Spec > containers > image
+        
+        # Please edit the object below. Lines beginning with a '#' will be ignored,
+                # and an empty file will abort the edit. If an error occurs while saving this file will be
+                # reopened with the relevant failures.
+                #
+                apiVersion: extensions/v1beta1
+                kind: Deployment
+                metadata:
+                  annotations:
+                    deployment.kubernetes.io/revision: "1"
+                  creationTimestamp: 2016-03-24T17:55:28Z
+                  generation: 3
+                  labels:
+                    run: hello-node
+                  name: hello-node
+                  namespace: default
+                  resourceVersion: "151017"
+                  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/hello-node
+                  uid: 981fe302-f1e9-11e5-9a78-42010af00005
+                spec:
+                  replicas: 4
+                  selector:
+                    matchLabels:
+                      run: hello-node
+                  strategy:
+                    rollingUpdate:
+                      maxSurge: 1
+                      maxUnavailable: 1
+                    type: RollingUpdate
+                  template:
+                    metadata:
+                      creationTimestamp: null
+                      labels:
+                        run: hello-node
+                    spec:
+                      containers:
+                      - image: gcr.io/PROJECT_ID/hello-node:v1 ## Update this line ##
+                        imagePullPolicy: IfNotPresent
+                        name: hello-node
+                        ports:
+                        - containerPort: 8080
+                          protocol: TCP
+                        resources: {}
+                        terminationMessagePath: /dev/termination-log
+                      dnsPolicy: ClusterFirst
+                      restartPolicy: Always
+                      securityContext: {}
+                      terminationGracePeriodSeconds: 30
+                      
+ * 8.3, to leave the editor
+ 
+         ESC
+ 
+         :wq
+
+        [output]
+        deployment.extensions/<deployed container name> edited
