@@ -89,9 +89,9 @@ start from step 2:
           
  * 3.4, build docker file and run it
  
-        docker built -t gcr.io/<project-id>/<image name>:v1
+        docker built -t gcr.io/<project-id>/<node name>:v1
         
-        docker run -d -p 8080:8080 gcr.io/<project-id>/<image name>:v1
+        docker run -d -p 8080:8080 gcr.io/<project-id>/<node name>:v1
         
  * 3.5, check result in web-preview feature in gcloud shell or type following cmd line
  
@@ -103,7 +103,7 @@ start from step 2:
          
          [output]
          container id            image                               cmd
-         xxxxxxx          gcr.io/<project-id>/<image name>:v1        "/bin/sh -c"
+         xxxxxxx          gcr.io/<project-id>/<node name>:v1        "/bin/sh -c"
          
  * 3.7, push image to container registry
  
@@ -114,7 +114,7 @@ start from step 2:
          
          [output]
          
-                The push refers to a repository [gcr.io/<proj_id>/<image_name>]
+                The push refers to a repository [gcr.io/<proj_id>/<node_name>]
                 ba6ca48af64e: Pushed
                 381c97ba7dc3: Pushed
                 604c78617f34: Pushed
@@ -132,6 +132,21 @@ start from step 2:
  start from step 4:
  
  > create container's Cluster and Pod
+ 
+   A cluster consists of a master (api) server hosted by google, and a set of worker nodes which are VMs (gce).
+ 
+ * 4.1, 
+ 
+          gcloud config set project <proj_id>
+          
+ * 4.2, create cluster with 2 nodes
+ 
+          gloud container cluster create <cluster name>\
+          
+                --num-nodes 2\
+                --machine-type <type>\
+                --zone <zone>
+ 
         
        
        
