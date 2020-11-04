@@ -223,6 +223,8 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
          kubectl expose deployment <deployed container name>
 
          kubectl expose deployment hello-node --type="LoadBalancer" --port=8080
+         // this flag matters with LB:  
+         // This will cause the resulting service to LB traffic across all pods managed by the deployment (in this case only 1 pod, but you will add more replicas later).
          
          [output]
          service/hello-node exposed
