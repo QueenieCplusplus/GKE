@@ -16,9 +16,11 @@ vm, container, app, registry, cluster, pod, kubectl tool
 
 (5) create Pod (to include deployed containers)
 
-(5) allow External Traffic
+(6) allow External Traffic
 
-(6) scale & update service
+(7) scale up service
+
+(8) upgrade service
 
 
 start from step 2:
@@ -219,7 +221,7 @@ forwarding rules, target pools, and firewall rules to make the service fully acc
 
 start from step 6:
 
-to allow External traffic.
+> to allow External traffic.
 
 Without this step, the pod's network flow is connect with its cluter in inernal network.
 
@@ -248,3 +250,13 @@ Without this step, the pod's network flow is connect with its cluter in inernal 
 
       ![ip](https://cdn.qwiklabs.com/C36gw9A9wyqza3PveBYBCsMggISATH80A18fqFBck7U%3D)
         
+# Scale Up
+
+start from step 7:
+
+
+
+# Upgarde Service
+
+start from step 8:
+
