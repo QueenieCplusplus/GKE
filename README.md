@@ -214,6 +214,9 @@ start from step 2:
             
 # LB
 
+The Kubernetes master creates the LB and related GCE VM (worker nodes) 
+forwarding rules, target pools, and firewall rules to make the service fully accessible from outside of Google Cloud.
+
 start from step 6:
 
 to allow External traffic.
