@@ -175,15 +175,31 @@ start from step 2:
    
 * 5.1, to do deployment to create a (single container) Pod using kubectl tool
 
-             kubectl create deployment <a container's pod name>\
+             kubectl create deployment <deployed container name>\
                
                    --image = gcr.io/<project-id>/<node name>:v1  
 
              [output]
              
-             deployment.apps/<a container's pod name> created
+             deployment.apps/<container name> created
              
-* 5.2, to create and scale Pod using kubectl tool
+* 5.2, to create and scale Pod (Replica) using kubectl tool
+
+            kubectl get deployments
+            
+            [output]
+            NAME         READY   UP-TO-DATE   AVAILABLE   AGE
+            <deployed container name>   1/1     1            1           1m36s
+            
+            kebectl get pods
+            
+            [output]
+            NAME                         READY     STATUS    RESTARTS   AGE
+            hello-node-714049816-ztzrb   1/1       Running   0          6m
+            
+            // hello-node-714049816-ztzrb is a pod id and name
+            
+
        
        
        
