@@ -206,15 +206,17 @@ start from step 2:
            
            kubectl config view
            
-           kubectl get events
-           
            kubectl logd <pod-name> 
            // 可能如上為 <deployed container name> 或是 hello-node-714049816-ztzrb
+           
+           
+ * 5.4, to do trouble shoot
+ 
+            kubectl get events
 
 
        
-       
-       
+         
        
   
 
