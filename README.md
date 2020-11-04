@@ -257,6 +257,9 @@ start from step 7:
 * 7.1, using RC to scale up App services
 
       kubectl scale deployment <deployed container name> --replicas=4
+      
+      [output]
+      deployment.extensions/<deployed container name> scaled
 
 ![scale](https://cdn.qwiklabs.com/xcK5q7mZsGBWS%2BPbytdmF0W%2BdsZxvNXdOIEPBXX13X4%3D)
 
