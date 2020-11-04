@@ -155,6 +155,10 @@ start from step 2:
                 NAME         ZONE           MASTER_VERSION  MASTER_IP       MACHINE_TYPE   STATUS
                 hello-kate  us-central1-a  1.5.7           146.148.46.124  n1-standard-1  RUNNING
  
+ * 4.3, check Navigation bar called GKE(kubernets Engine) in console
+ 
+ 
+   ![gke](https://cdn.qwiklabs.com/wMR0qhPxxgayDTSjDq1oXmoXEy4OeuQ%2FUtc6CZnvFT0%3D)
         
        
        
