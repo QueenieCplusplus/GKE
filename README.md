@@ -10,6 +10,8 @@ vm, container, app, registry, cluster, pod, kubectl tool
 
 (2) create APP, pack app into Container Image
 
+ ![container](https://miro.medium.com/max/1400/1*p6Nc3zVTadBSQDd7cXvzDw.png)
+
 (3) push Image to Container Registry
 
 (4) create GKE Cluster 
