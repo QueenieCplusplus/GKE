@@ -357,3 +357,8 @@ start from step 8:
 # Ref
 
 https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+
+
+# Ref code
+
+66
