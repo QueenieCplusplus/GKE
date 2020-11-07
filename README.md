@@ -361,4 +361,4 @@ https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
 
 # Ref code
 
-66, 11765, 11777
+66(container), 11765(kafka), 11777(microservice)
