@@ -358,6 +358,8 @@ start from step 8:
 
 https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
 
+https://cloud.google.com/solutions/prep-kubernetes-engine-for-prod
+
 
 # Ref code
 
